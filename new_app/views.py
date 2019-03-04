@@ -6,5 +6,5 @@ from .tasks import add
 
 
 def index(request):
-    add.delay(1, 4)
-    HttpResponse('Hello')
+    id = add.delay(1, 4)
+    return HttpResponse('Hello:%s' % id)

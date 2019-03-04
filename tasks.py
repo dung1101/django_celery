@@ -6,5 +6,6 @@ app = Celery('tasks',
              broker='pyamqp://guest@localhost//')
 
 
-def add(x, y):
-    return x + y
+@app.task
+def div(x, y):
+    return x / y

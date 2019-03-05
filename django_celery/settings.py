@@ -122,5 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # CELERY_RESULT_BACKEND = 'django-db'
-BROKER_URL = 'amqp://guest:guest@localhost:5672/' 
-CELERY_RESULT_BACKEND = 'amqp://guest:guest@localhost:5672'
+BROKER_URL = 'amqp://localhost:5672/'
+CELERY_RESULT_BACKEND = 'amqp://localhost:5672'
